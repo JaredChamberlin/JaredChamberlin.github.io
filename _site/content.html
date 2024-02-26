@@ -37,14 +37,30 @@
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="home">
-<h2 class="post-list-heading">Login</h2>
-        <form action="/content/">
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
-            <button type="submit">Login</button>
-        </form>
+          <h2>Registration</h2>
+            <form id="registrationForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword"><br>
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="UK">UK</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Germany">Germany</option>
+                </select><br><br>
+                <button type="submit" id="registerButton">Register</button>
+              </form><br><br>
+            <h2>Alert!</h2>
+              <button onclick="alert('You clicked the button!')">Display Alert</button>
+        </div>
+
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
